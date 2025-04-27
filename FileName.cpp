@@ -3,6 +3,6 @@ using namespace std;
 
 int main()
 {
-	cout << "£¬¡£"<<endl;
+	cout << "Â£Â¬Â¡Â£,,"<<endl;
 	system("pause");
 }
