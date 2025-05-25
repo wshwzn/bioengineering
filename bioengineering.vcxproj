@@ -104,10 +104,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Opencv\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Opencv\opencv\build\x64\vc16\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world4110d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -118,19 +121,26 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Opencv\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Opencv\opencv\build\x64\vc16\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world4110d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Aligner.cpp" />
     <ClCompile Include="CSVLoader.cpp" />
+    <ClCompile Include="DESeq2Analyzer.cpp" />
     <ClCompile Include="DNAsequence.cpp" />
+    <ClCompile Include="Painter.cpp" />
     <ClCompile Include="FileSaver.cpp" />
+    <ClCompile Include="Normalizer.cpp" />
+    <ClCompile Include="ResultLoader.cpp" />
     <ClCompile Include="Tool.cpp" />
     <ClCompile Include="FASTAparser.cpp" />
     <ClCompile Include="main.cpp" />
@@ -139,10 +149,14 @@
     <ClInclude Include="Aligner.h" />
     <ClInclude Include="AlignmentResult.h" />
     <ClInclude Include="CSVLoader.h" />
-    <ClInclude Include="DifferentialResult.h" />
+    <ClInclude Include="DESeq2Analyzer.h" />
+    <ClInclude Include="DESeq2Result.h" />
     <ClInclude Include="DNAsequence.h" />
+    <ClInclude Include="Painter.h" />
     <ClInclude Include="FileSaver.h" />
-    <ClInclude Include="GeneExpressionData.h" />
+    <ClInclude Include="CountData.h" />
+    <ClInclude Include="Normalizer.h" />
+    <ClInclude Include="ResultLoader.h" />
     <ClInclude Include="Tool.h" />
     <ClInclude Include="FASTAparser.h" />
   </ItemGroup>

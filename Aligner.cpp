@@ -115,8 +115,11 @@ string Aligner::get_match_line(const pair<string, string>&seqs) {
 	string seq2 = seqs.second;
 	string match_line="";
 	for (int i = 0; i < seq1.size(); i++) {
-		if (seq1.at(i) == seq2.at(i)) {
+		if ((seq1.at(i) == seq2.at(i))&& seq1.at(i)!='N') {
 			match_line = match_line+ "|" ;
+		}
+		else if (seq1.at(i) == seq2.at(i)) {
+			match_line = match_line + ":";
 		}
 		else {
 			match_line = match_line+" ";

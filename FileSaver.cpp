@@ -88,3 +88,12 @@ void FileSaver::saveAlignment(const string& filename, const AlignmentResult& ali
 </body></html>)";
 	fout.close();
 }
+
+void FileSaver::saveDESeq2(const string& filename, const vector<DESeq2Result>& results) {
+    ofstream fout(filename);
+    fout << "»ùÒòÃû³Æ,log2fc,pvalue,padj" << endl;
+    for (auto& i : results) {
+        fout << i.gene_name << ',' << i.log2_fold_change << ',' << i.p_value << ',' << i.padj << endl;
+    }
+    fout.close();
+}

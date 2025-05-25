@@ -1,7 +1,11 @@
-D:\project_c++\bioengineering\Aligner.cpp;D:\project_c++\bioengineering\x64\Debug\Aligner.obj
-D:\project_c++\bioengineering\CSVLoader.cpp;D:\project_c++\bioengineering\x64\Debug\CSVLoader.obj
-D:\project_c++\bioengineering\DNAsequence.cpp;D:\project_c++\bioengineering\x64\Debug\DNAsequence.obj
-D:\project_c++\bioengineering\FileSaver.cpp;D:\project_c++\bioengineering\x64\Debug\FileSaver.obj
-D:\project_c++\bioengineering\Tool.cpp;D:\project_c++\bioengineering\x64\Debug\Tool.obj
-D:\project_c++\bioengineering\FASTAparser.cpp;D:\project_c++\bioengineering\x64\Debug\FASTAparser.obj
-D:\project_c++\bioengineering\main.cpp;D:\project_c++\bioengineering\x64\Debug\main.obj
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\Aligner.cpp;C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\x64\Debug\Aligner.obj
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\CSVLoader.cpp;C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\x64\Debug\CSVLoader.obj
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\DESeq2Analyzer.cpp;C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\x64\Debug\DESeq2Analyzer.obj
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\DNAsequence.cpp;C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\x64\Debug\DNAsequence.obj
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\Painter.cpp;C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\x64\Debug\Painter.obj
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\FileSaver.cpp;C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\x64\Debug\FileSaver.obj
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\Normalizer.cpp;C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\x64\Debug\Normalizer.obj
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\ResultLoader.cpp;C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\x64\Debug\ResultLoader.obj
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\Tool.cpp;C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\x64\Debug\Tool.obj
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\FASTAparser.cpp;C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\x64\Debug\FASTAparser.obj
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\main.cpp;C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\x64\Debug\main.obj

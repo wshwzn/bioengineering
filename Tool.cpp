@@ -3,14 +3,19 @@
 #include"Aligner.h"
 #include"FileSaver.h"
 #include"CSVLoader.h"
-
+#include"DESeq2Result.h"
+#include"DESeq2Analyzer.h"
+#include"ResultLoader.h"
+#include"Painter.h"
 void Tool::Show_Menu() {
-
+	
 	cout << "**************************************************************" << endl;
-	cout << "********************欢迎使用生物工程小应用********************" << endl;
-	cout << "*********************** 0.退出应用程序 ***********************" << endl;
-	cout << "*********************** 1.基因序列分析 ***********************" << endl;
-	cout << "*********************** 2.基因序列比对 ***********************" << endl;
+	cout << "*                   欢迎使用生物工程小应用                   *" << endl;
+	cout << "*                       0.退出应用程序                       *" << endl;
+	cout << "*                       1.基因序列分析                       *" << endl;
+	cout << "*                       2.基因序列比对                       *" << endl;
+	cout << "*                       3.基因表达数据分析                   *" << endl;
+	cout << "*                       4.绘制差异表达分析结果火山图         *" << endl;
 	cout << "**************************************************************" << endl;
 	cout << endl;
 }
@@ -106,6 +111,8 @@ void Tool::DNAsequenceAlign() {
 	catch (runtime_error& e) {
 		cerr << e.what() << endl;
 		iferror = true;
+	}
+	if (iferror) {
 		system("pause");
 		system("cls");
 		return;
@@ -126,7 +133,86 @@ void Tool::DNAsequenceAlign() {
 	return;
 }
 
-//自定义字符串输入
+void Tool::GEAnalyse() {
+	CSVLoader loader;
+	bool iferror = false;
+	cout << "请输入基因表达数据文件名" << endl;
+	string filename;
+	mycin (filename);
+	CountData data;
+	try {
+		data = loader.loadFromCSV(filename);
+	}
+	catch(runtime_error&e){
+		cerr << e.what() << endl;
+		iferror = true;
+	}
+	if (iferror) {
+		system("pause");
+		system("cls");
+		return;
+	}
+	
+	vector<DESeq2Result>results = DESeq2Analyzer().analyze(data,"HC","RA");
+	FileSaver saver;
+	string savename = "差异表达分析结果.csv";
+	saver.namePlus(savename);
+	saver.saveDESeq2(savename, results);
+	cout << "分析结果已保存至文件\"" << savename << "\"中，可自行查看" << endl;
+	string vsavename="火山图.png";
+	saver.namePlus(vsavename);
+
+
+
+	Painter painter;
+	//创建图像
+	cv::Mat volcanoPlot = painter.createVolcanoPlot(results);
+	// 显示并保存图像
+	cv::imshow("Volcano Plot", volcanoPlot);
+	cv::imwrite(vsavename, volcanoPlot);
+	cv::waitKey(0);
+	cout << "分析结果图像已保存为\"" << vsavename << "\"" << endl;
+
+	system("pause");
+	system("cls");
+	return;
+}
+
+void Tool::drewpicture() {
+	cout << "请输入基因表达数据文件名" << endl;
+	string filename;
+	bool iferror = false;
+	mycin(filename);
+	ResultLoader loader;
+	vector<DESeq2Result>data;
+	try {
+		data = loader.readDESeq2Results(filename);
+	}
+	catch (runtime_error& e) {
+		cerr << e.what() << endl;
+		iferror = true;
+	}
+	if (iferror) {
+		system("pause");
+		system("cls");
+		return;
+	}
+	Painter painter;
+	FileSaver saver;
+	string savename = "volcano_plot.png";
+	saver.namePlus(savename);
+	//创建图像
+	cv::Mat volcanoPlot = painter.createVolcanoPlot(data);
+	// 显示并保存图像
+	cv::imshow("Volcano Plot", volcanoPlot);
+	cv::imwrite(savename, volcanoPlot);
+	cv::waitKey(0);
+	cout << "图像已保存为\"" << savename << "\"" << endl;
+	system("pause");
+	system("cls");
+	return;
+}
+
 void mycin(string& str) {
 	if (cin.rdbuf()->in_avail() != 0)
 		cin.ignore(100, '\n');

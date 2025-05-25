@@ -1,9 +1,9 @@
 #pragma once
-#include"GeneExpressionData.h"
+#include"CountData.h"
 class CSVLoader {
 public:
 
 	//从csv文件中读取基因表达数据
-	GeneExpressionData loadFromCSV(const string& filename);
+	CountData loadFromCSV(const string& filename);
 
 };

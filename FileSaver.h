@@ -2,6 +2,7 @@
 #include<iostream>
 #include"DNAsequence.h"
 #include"AlignmentResult.h"
+#include"DESeq2Result.h"
 using namespace std;
 
 class FileSaver
@@ -15,5 +16,10 @@ public:
 
 	//保存DNA序列比对结果
 	void saveAlignment(const string& filename, const AlignmentResult& alignmentresult);
+
+	///保存差异表达分析结果
+	void saveDESeq2(const string& filename, const vector<DESeq2Result>& results);
+
+	//保存火山图
 };
 

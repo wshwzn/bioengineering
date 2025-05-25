@@ -36,6 +36,18 @@
     <ClCompile Include="CSVLoader.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Normalizer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DESeq2Analyzer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultLoader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Painter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DNAsequence.h">
@@ -56,13 +68,25 @@
     <ClInclude Include="FileSaver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="GeneExpressionData.h">
+    <ClInclude Include="CountData.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="DifferentialResult.h">
+    <ClInclude Include="DESeq2Result.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="CSVLoader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Normalizer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DESeq2Analyzer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultLoader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Painter.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

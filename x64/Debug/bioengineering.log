@@ -1,3 +1,21 @@
-﻿  main.cpp
-D:\project_c++\bioengineering\main.cpp(12,7): warning C4101: “tool”: 未引用的局部变量
-  bioengineering.vcxproj -> D:\project_c++\bioengineering\x64\Debug\bioengineering.exe
+﻿  Aligner.cpp
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\Aligner.cpp(55,8): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\Aligner.cpp(56,8): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  CSVLoader.cpp
+  DESeq2Analyzer.cpp
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\DESeq2Analyzer.cpp(144,30): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\DESeq2Analyzer.cpp(144,14): warning C4267: “初始化”: 从“size_t”转换到“const int”，可能丢失数据
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\DESeq2Analyzer.cpp(250,29): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\DESeq2Analyzer.cpp(250,15): warning C4267: “初始化”: 从“size_t”转换到“const int”，可能丢失数据
+  DNAsequence.cpp
+  Painter.cpp
+  FileSaver.cpp
+  Normalizer.cpp
+  ResultLoader.cpp
+  Tool.cpp
+  FASTAparser.cpp
+  main.cpp
+  正在生成代码...
+  bioengineering.vcxproj -> C:\Users\Lenovo\Desktop\新建文件夹 (2)\bioengineering\x64\Debug\bioengineering.exe
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。

@@ -8,7 +8,7 @@ public:
 	string header;//序列标识
 	string sequence;//实际序列数据
 	
-
+	
 
 	//构造函数
 	DNAsequence():header(""),sequence(""){}
